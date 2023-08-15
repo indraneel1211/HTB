@@ -1,0 +1,4 @@
+
+HTB Preignition - starting point
+
+sudo gobuster dir -w /usr/share/wordlists/dirb/common.txt -u 10.129.14.140
