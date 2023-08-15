@@ -1,0 +1,5 @@
+---- Good Games ______
+
+1. sudo nmap -Pn -sC -sV 10.10.11.130
+2. gobuster dir -u 10.10.11.130 -t 100 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt --wildcard
+3. 

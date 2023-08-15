@@ -1,0 +1,21 @@
+_____  CAP _______
+
+
+
+1. nmap scan -Pn -sC -sV 10.10.10.245
+2. Go to the website and do recon about the website.
+3. In security snapshot, we can see in the url that it contains /data/1. Since we need all the data change it data/0.
+4. Download the file and open it with wireshark.
+5. We can see the username and password there.
+   USER - Nathan
+   Password - Buck3tH4TF0RM3!
+   
+6. Next we can connect ssh since we saw in nmap scan the port was open.
+7. ssh nathan@10.10.10.245
+8. ls and get the user.txt
+9. next do the priv escalation part run the linpeas.sh and in the capability we can see /tmp$ /usr/bin/python3.8
+10. copy the os commands - import os
+                           os.setuid(0)
+                           os.system("/bin/bash")
+    Here we get the root access.
+11. get the root.txt flag.
